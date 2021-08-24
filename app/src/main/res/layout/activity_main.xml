@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="154dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="58dp"
+        android:onClick="Go"
+        android:text="Start"
+        android:textSize="24sp"
+        app:backgroundTint="#572626"
+        app:iconPadding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.229" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="133dp"
+        android:layout_height="90dp"
+        android:background="#F1A9A9"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="00s"
+        android:textColor="#E81D1D"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="140dp"
+        android:layout_height="86dp"
+        android:background="@color/teal_700"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="0/0"
+        android:textColor="#E7F6F8"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="1.0"
+        app:rowCount="3">
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="133dp"
+            android:layout_height="136dp"
+            android:gravity="fill"
+            android:onClick="setText"
+            android:tag="A"
+            android:text="217"
+            android:textSize="24dp"
+            app:backgroundTint="@color/teal_200"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="147dp"
+            android:layout_height="100dp"
+            android:gravity="fill"
+            android:onClick="setText"
+            android:tag="B"
+            android:text="317"
+            android:textSize="24dp"
+            app:backgroundTint="#FBC02D"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="146dp"
+            android:layout_height="141dp"
+            android:gravity="fill"
+            android:onClick="setText"
+            android:tag="C"
+            android:text="307"
+            android:textSize="24dp"
+            app:backgroundTint="#D61919"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="145dp"
+            android:layout_height="149dp"
+            android:gravity="fill"
+            android:onClick="setText"
+            android:tag="D"
+            android:text="327"
+            android:textSize="24dp"
+            app:backgroundTint="#1976D2"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="173dp"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="120+97"
+        android:textSize="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="197dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="42dp"
+        android:gravity="center"
+        android:text="Correct"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.855" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
